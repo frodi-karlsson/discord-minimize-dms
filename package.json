@@ -1,0 +1,19 @@
+{
+    "name": "discord-minimize-dms",
+    "version": "1.0.0",
+    "description": "A Chrome extension to minimize direct messages in Discord",
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+            "matches": [
+                "https://discord.com/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "scripts": {
+        "package": "tar.exe -a -c -f discord-minimize-dms.zip *"
+    }
+}
